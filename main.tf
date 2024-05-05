@@ -5,6 +5,9 @@ terraform {
       version = "~> 3.0.1"
     }
   }
+  backend "local" {
+      path = "./terraform.tfstate"
+  }
 }
 
 provider "docker" {
